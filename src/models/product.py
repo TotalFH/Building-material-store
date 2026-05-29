@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from .category import Category
+from models.categories import Category
 
 @dataclass
 class Product:

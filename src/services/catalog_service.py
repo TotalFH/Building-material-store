@@ -21,7 +21,7 @@ class CatalogService:
                 id = item["id"],
                 name = item["name"],
                 category = Category(**item["category"]),
-                prices = item["prices"]
+                price = item["prices"]
                     )
             products.append(product)
             
