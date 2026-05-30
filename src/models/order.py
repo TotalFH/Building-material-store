@@ -1,9 +1,10 @@
 from dataclasses import dataclass
 from models.product import Product
 
+
 @dataclass
 class Order:
-    id: int
+    product_id: int
+    product_name: Product
     region: str
-    product: Product
     final_price: float
