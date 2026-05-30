@@ -8,6 +8,7 @@ from models.product import Product
 class CatalogService:
     PATH = "data/materials.json"
     
+    # предполагается что все товары имеют одинаковый набор регионов
     def get_regions(self, products: list[Product]) -> list[str]:
         regions = set()
         for product in products:

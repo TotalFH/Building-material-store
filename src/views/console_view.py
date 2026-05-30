@@ -45,9 +45,9 @@ class ConsoleView:
                 f"{price:>8}"
             )
 
-
     def choose_product(self, products) -> Product | None:
         while True:
+            print("\nНажмите '0' чтоб вернуться в меню")
             choice = self.get_input("\nВведите ID товара: ")
             
             if choice == "q":
@@ -114,7 +114,7 @@ class ConsoleView:
         print("=" * 50)
 
     def show_success(self) -> None:
-        print("/n" + "Заказ успешно создан, возврат на главную страницу")
+        print("\nЗаказ успешно создан, возврат на главную страницу")
 
     def show_error(self, error_message: str) -> None:
         print(error_message)
