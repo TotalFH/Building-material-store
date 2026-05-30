@@ -11,10 +11,14 @@
 
 Из корня проекта:
 
-'''bash
+```bash
 python main.py
-
+```
 ---
+
+## Демо
+
+![demo](docs/Screenshot.png)
 
 ## Логика работы
 
